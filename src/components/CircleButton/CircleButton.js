@@ -43,12 +43,14 @@ const CircleButton = (props) => {
                         opacity: circleButtonState.opacity}}
                 onClick={userSelectedThisButton}>
             {props.buttonText}
+            <img src = {`./img/${props.buttonImage}`} alt='a button image'/>
         </button>
     );
 }
 
 CircleButton.defaultProps = {
-    buttonText : '0'
+    buttonText : '',
+    buttonImage: ''
 }
 
 export default CircleButton;

@@ -1,0 +1,8 @@
+.rounded-square-panel
+{
+    width:50%;
+    height:200px;
+    background-color: hsl(215, 34%, 20%);
+    border-style: dashed;
+    border-radius: 20%;
+}
