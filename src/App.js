@@ -7,7 +7,8 @@ import './css/RoundedSquarePanel.css';
 function App() {
   return (
     <div className='rounded-square-panel'>
-      <img src = "./img/icon-star.svg" alt="a star SVG"/>
+      <CircleButton buttonImage='icon-star.svg'/>
+      <img src="logo.svg" alt='some logo'/>
 
       <div>
         <CircleButton buttonText='1'/>

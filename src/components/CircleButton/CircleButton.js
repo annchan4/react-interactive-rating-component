@@ -27,7 +27,7 @@ const CircleButton = (props) => {
         const btns = document.getElementsByClassName('btn');
         for(var oneBtn in btns)
         {
-            if(oneBtn != this)
+            if(oneBtn !== this)
             {
                 oneBtn.setCircleButtonState({
                     backgroundColor:'hsl(215, 30%, 22%)',
@@ -37,13 +37,35 @@ const CircleButton = (props) => {
         }
     }
 
+    //sometimes the button will have an image instead of text in the middle
+    const DrawTextOrImageOnButton = (props) => {
+
+        if(props.buttonText !== '')
+        {
+            return (
+                <b>{props.buttonText}</b>
+            );
+        }
+        else if(props.buttonImage !== '')
+        {
+            return (
+                <img src = {`../img/${props.buttonImage}`} alt='a button image'/>
+            );
+        }
+        else
+        {
+            return(
+                <></>
+            );
+        }
+    };
+
     return (
         <button className='circle-button' 
                 style={{backgroundColor: circleButtonState.backgroundColor,
                         opacity: circleButtonState.opacity}}
                 onClick={userSelectedThisButton}>
-            {props.buttonText}
-            <img src = {`./img/${props.buttonImage}`} alt='a button image'/>
+            <DrawTextOrImageOnButton buttonText={props.buttonText} buttonImage={props.buttonImage} />
         </button>
     );
 }
