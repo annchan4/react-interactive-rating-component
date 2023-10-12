@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import CircleButton from './components/CircleButton/CircleButton';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Panel">
+      <CircleButton buttonText='1'/>
+      <CircleButton buttonText='2'/>
+      <CircleButton buttonText='3'/>
+      <CircleButton buttonText='4'/>
+      <CircleButton buttonText='5'/>
     </div>
   );
 }

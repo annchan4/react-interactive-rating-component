@@ -1,0 +1,15 @@
+.circle-button
+{
+    border-radius: 50%;
+    color:white;
+    padding:1.5%;
+    /*opacity: 0.8;
+    background-color: lightgrey;
+    color:white;*/
+}
+
+/*.circle-button:hover
+{
+    opacity: 1.0;
+    background-color: orange; 
+}*/
